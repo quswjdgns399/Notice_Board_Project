@@ -1,0 +1,17 @@
+label,
+input,
+button {
+  margin: 10px;
+  padding: 5px;
+  font-size: 40px; /* 글씨 크기 */
+  text-align: center; /* 중앙 정렬 */
+}
+
+body {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  height: 100vh; /* 화면 전체 높이를 사용 */
+  margin: 0; /* 기본 여백 제거 */
+  font-size: 40px;
+}
