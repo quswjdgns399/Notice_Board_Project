@@ -42,24 +42,15 @@ function LoginComponent() {
     console.log(password);
   }
 
-  function SuccessMessageComponent() {
-    if (showSuccessMessage) {
-      return <div>Authenticated Successfully</div>;
-    }
-    return null;
-  }
-
-  function FailedMessageComponent() {
-    if (showFailureMessage) {
-      return <div>Authenticated Failed</div>;
-    }
-    return null;
-  }
-
   return (
     <div className="Login">
-      <SuccessMessageComponent />
-      <FailedMessageComponent />
+      {showSuccessMessage && (
+        <div className="successMessage">Authenticated Successfully</div>
+      )}
+      {showFailureMessage && (
+        <div className="failedMessage">Authenticated Failed</div>
+      )}
+
       <div className="LoginForm">
         <div>
           <label>Username</label>
